@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">CONNECT 4</h1>
+
+    <h2 id="score">Player 1: 0 | Player 2: 0</h2>
+
+    <div class="buttons">
+        <button class="ai-btn" onclick="setAI(true)">
+            Play With AI
+        </button>
+
+        <button class="player-btn" onclick="setAI(false)">
+            2 Players
+        </button>
+
+        <button class="restart-btn" onclick="restartGame()">
+            Restart
+        </button>
+    </div>
+
+    <h2 id="status">Player 1 Turn</h2>
+
+    <div id="board"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
